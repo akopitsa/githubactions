@@ -1,0 +1,14 @@
+name:  firstworkflow
+on: [push]
+
+jobs:
+  run-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo "Hello, world!"
+      - name: Run a multi-line script
+        run: |
+          echo "Add other actions to build, test, and deploy your project."
+          echo "See https://help.github.com/actions for more information on how to customize your workflow."
+      
